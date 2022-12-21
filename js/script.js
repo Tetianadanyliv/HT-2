@@ -12,15 +12,13 @@ while (Number.isInteger(numberM) === false){
 
 const missEvenNumber = confirm("Чи потрібно пропускати парні числа?");
 
+
     let sum = 0;
     for (let i = numberN; i <= numberM; i++) {
-        if ((i % 2)  ==0) {
+        if ((i % 2)  ==!0) {
+            sum = sum+i;
+        }
+        else (i % 2 ==0)
             sum = sum;
         }
-        else (i % 2 ==!0)
-            sum = sum + i;
-        }
     console.log (sum)
-
-
-    
