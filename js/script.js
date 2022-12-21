@@ -1,31 +1,19 @@
 let numberN = Number(prompt("Please, enter integer value N"));
-
-if (Number.isInteger(numberN)) {
-} else if (!Number.isInteger(numberN)) {
+while (Number.isInteger(numberN) === false){
     alert ('The value is not suitable!');
-    let numberN = Number(prompt("Please, enter integer value N"));
-}
-else (Number.isInteger(numberN));
-
-
+    numberN = Number(prompt("Please, enter integer value N"));
+} 
 
 let numberM = Number(prompt("Please, enter integer value M"));
-if (Number.isInteger(numberM)) {
-} else if (!Number.isInteger(numberM)) {
+while (Number.isInteger(numberM) === false){
     alert ('The value is not suitable!');
-    let numberN = Number(prompt("Please, enter integer value M"));
-}
-else (Number.isInteger(numberM));
-
-
-
+    numberM = Number(prompt("Please, enter integer value M"));
+} 
 
 const missEvenNumber = confirm("Чи потрібно пропускати парні числа?");
 
-
     let sum = 0;
     for (let i = numberN; i <= numberM; i++) {
-        if (missEvenNumber);
         if ((i % 2)  ==0) {
             sum = sum;
         }
@@ -35,4 +23,4 @@ const missEvenNumber = confirm("Чи потрібно пропускати па�
     console.log (sum)
 
 
-  
+    
